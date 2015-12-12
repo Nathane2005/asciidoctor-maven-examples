@@ -1,0 +1,16 @@
+= Asciidoctor Maven Plugin: Asciidoctor Ruby Extension Maven Example
+
+An example project that demonstrates how to convert AsciiDoc to HTML using the Asciidoctor Maven plugin.
+
+The `asciidoctor-html5ruby` extension is downloaded from rubygems
+
+* Rubygems page: https://rubygems.org/gems/asciidoctor-html5ruby
+* GitHub page: https://github.com/pasberth/asciidoctor-html5ruby
+
+== Usage
+
+Convert the AsciiDoc to HTML by invoking the `process-resources` goal (configured as the default goal):
+
+ $ mvn
+
+Open the file _target/generated-docs/example-manual.html_ in your browser to see the generated HTML file.

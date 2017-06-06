@@ -3,6 +3,7 @@ Doc Writer <doc.writer@example.org>
 v1.0, 2014-09-09
 :example-caption!:
 ifndef::imagesdir[:imagesdir: images]
+:back-cover-image: image:backcover.pdf[]
 
 == Introduction
 

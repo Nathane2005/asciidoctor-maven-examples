@@ -1,43 +1,116 @@
+the_color:
+  a: #0D6940
+  b: #B5260F
+  c: #13B56D
 title_page:
   align: left
   background_image: cover.png
-
+  font_size: 11
+  logo:
+    image: image:logo.png[]
+    align: left
+    top: 95%
+  title:
+    top: 25%
+    font_color: $the_color_a
+    font_size: 40
+    font_style: bold
+  subtitle:
+    font_color: $the_color_b
+    font_size: 14
+    font_style: bold
 page:
   layout: portrait
   margin: [0.75in, 1in, 0.75in, 1in]
   size: A4
 base:
-  font_color: #333333
+  font:
+    color: #333333
   line_height_length: 17
   line_height: $base_line_height_length / $base_font_size
 vertical_rhythm: $base_line_height_length
 heading:
-  font_color: #FF8000
-  font_size: 17
-  font_style: bold
   line_height: 1.2
   margin_bottom: $vertical_rhythm
+  h2:
+    font_color: $the_color_b
+    font_style: normal
+    text_transform: uppercase
+  h3:
+    font_color: $the_color_a
+    font_style: normal
+    text_transform: uppercase
+  h4:
+    font_color: #7F7F7F
+    font_style: bold
+  h5:
+    font_color: #000000
+    font_style: bold
+toc:
+  dot_leader_levels: none
+  indent: 0
+  title:
+    font_color: #000000
+    text_transform: none
+  h2:
+    font_color: $the_color_b
+    font_size: 12
+    text_transform: uppercase
+  h3:
+    font_color: $the_color_a
+    font_size: 10.5
 link:
-  font_color: #009900
+  font_color: $the_color_b
 outline_list:
   indent: $base_font_size * 1.5
-header:
-  height: 0.75in
-  line_height: 1
-  recto_content:
-    center: '{document-title}'
-  verso_content:
-    center: '{document-title}'
 footer:
   height: 0.75in
   line_height: 1
-  recto_content:
-    right: '{chapter-title} | *{page-number}*'
-  verso_content:
-    left: '*{page-number}* | {chapter-title}'
+  recto:
+    left:
+      content: '{chapter-title}'
+    center:
+      content: '{version}'
+    right:
+      content: '{page-number}'
+      font_color: $the_color_a
+      font_style: bold
+  verso: 
+    left:
+      content: '{chapter-title}'
+    center:
+      content: '{version}'
+    right:
+      content: '{page-number}'
+      font_color: $the_color_a
+      font_style: bold
 image:
-  align: center
+  align: left
 caption:
-  align: center
-  font_color: #FF0000
-  font_size: 10
+  align: left
+  font_color: #5D5D5D
+  font_style: normal
+table:
+  border:
+    width: 0
+    color: #7F7F7F
+  head:
+    font_style: bold
+    font_color: $the_color_a
+    background_color: #FFFFFF
+  odd_row:
+    background_color: #F5F5F5
+  cell:
+    padding: [5, 5, 2, 5]
+admonition:
+  icon:
+    note:
+      stroke_color: $the_color_b
+    tip:
+      stroke_color: $the_color_b
+    warning:
+      stroke_color: $the_color_b
+    important:
+      stroke_color: $the_color_b
+    caution:
+      stroke_color: $the_color_b

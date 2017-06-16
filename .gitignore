@@ -4,3 +4,5 @@ target
 # IntelliJ
 *.iml
 .idea
+
+asciidoctor-pdf-with-theme-example/src/theme/logo.svg

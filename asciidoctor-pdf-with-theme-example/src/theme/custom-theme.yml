@@ -7,7 +7,7 @@ title_page:
   background_image: cover.png
   font_size: 11
   logo:
-    image: image:logo.png[]
+    image: image:logo.svg[]
     align: left
     top: 95%
   title:

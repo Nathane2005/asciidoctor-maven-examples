@@ -7,6 +7,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <name>DocBook Pipeline (jDocBook) Maven Example</name>
     <description>An example project that demonstrates how to convert AsciiDoc to DocBook and feed it to the DocBook pipeline to generate a PDF using the Asciidoctor and jDocBook Maven plugins.</description>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

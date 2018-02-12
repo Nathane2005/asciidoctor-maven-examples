@@ -9,6 +9,7 @@
     <description>An example project that demonstrates how to convert AsciiDoc to EPUB and mobi with Asciidoctor
         Maven plugin.
     </description>
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
